@@ -1,0 +1,59 @@
+.recipe {
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgb(80, 77, 77);
+    margin: 1.25rem;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: white;
+    align-items: center;
+    min-width: 40%;
+}
+
+.image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.calories {
+    border-radius: 20px;
+    padding: 0.6rem;
+    background: lightcoral;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.ingredients {
+   list-style: none;
+   position: relative;
+}
+
+.ingredient {
+    counter-increment: custom-counter;
+    margin-bottom: 1rem;
+ }
+
+ .ingredient::before {
+     content: counter(custom-counter);
+     position: absolute;
+     font-size: 1.2rem;
+     font-weight: bold;
+     text-align: center;
+     left: -2%;
+     --size: 2rem;
+     line-height: var(--size);
+     width: var(--size);
+     height: var(--size);
+     border-radius: 50%;
+     background: lightcoral;
+     color: white;
+ }
+
+ .dishType {
+    font-style: italic;
+    font-size: 1.2rem;
+    color:lightcoral;
+ }
